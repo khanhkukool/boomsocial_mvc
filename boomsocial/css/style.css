@@ -1,0 +1,13 @@
+.logo img{
+    width: 100%;
+}
+
+@media (max-width: 767px){
+    .pageSearch{
+        display: inline-block;
+    }
+}
+
+.stt-action{
+    height: 100%;
+}

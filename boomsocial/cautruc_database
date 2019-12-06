@@ -1,0 +1,15 @@
+CREATE DATASE IF NOT EXISTS boomer_demo CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE boomer_demo;
+
+-- Tạo bảng users chứa thông tin users
+CREATE TABLE IF NOT EXISTS users(
+    id INT(10) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    phone_number INT(20) NOT NULL COMMENT "Tên đăng nhập",
+    email VARCHAR(100) NOT NULL COMMENT "Tên đăng nhập",
+    password VARCHAR(100) NOT NULL COMMENT "Mật khẩu đăng nhập",
+    avartar VARCHAR(255) COMMENT "File ảnh đại diện",
+    facebook VARCHAR(255) COMMENT "Link facebook",
+    address VARCHAR(255) COMMENT "Địa chỉ users",
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT "Ngày tạo",
+    updated_at DATETIME COMMENT "Ngày cập nhật cuối"
+);
